@@ -1,5 +1,4 @@
-import asyncio
-from freshdesk_mcp.server import get_ticket, update_ticket, get_ticket_conversation, update_ticket_conversation, get_agents, list_canned_responses, list_solution_articles, list_solution_categories, list_solution_folders, list_groups, create_group, create_contact_field, create_canned_response_folder, update_canned_response_folder, create_canned_response, update_canned_response, view_canned_response, view_ticket_summary, update_ticket_summary, delete_ticket_summary
+from freshservice_mcp.server import get_ticket, update_ticket, get_ticket_conversation, update_ticket_conversation, get_agents, list_canned_responses, list_solution_articles, list_solution_categories, list_solution_folders, list_groups, create_group, create_contact_field, create_canned_response_folder, update_canned_response_folder, create_canned_response, update_canned_response, view_canned_response, view_ticket_summary, update_ticket_summary, delete_ticket_summary
 
 async def test_get_ticket():
     ticket_id = "1289" #Replace with a test ticket Id
@@ -138,21 +137,4 @@ async def test_view_canned_response():
     print(result)
 
 if __name__ == "__main__":
-    # asyncio.run(test_get_ticket())
-    # asyncio.run(test_update_ticket())
-    # asyncio.run(test_get_ticket_conversation())
-    # asyncio.run(test_update_ticket_conversation())
-    # asyncio.run(test_view_ticket_summary())
-    # asyncio.run(test_update_ticket_summary())
-    # asyncio.run(test_delete_ticket_summary())
-    # asyncio.run(test_get_agents())
-    # asyncio.run(test_list_canned_responses())
-    # asyncio.run(test_list_solution_articles())
-    # asyncio.run(test_list_solution_folders())
-    # asyncio.run(test_list_solution_categories())
-    # asyncio.run(test_list_groups())
-    # asyncio.run(test_create_canned_response_folder())
-    # asyncio.run(test_update_canned_response_folder())
-    # asyncio.run(test_create_canned_response())
-    # asyncio.run(test_view_canned_response())
-    # asyncio.run(test_update_canned_response())
+    pass

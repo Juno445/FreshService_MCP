@@ -1,19 +1,19 @@
-# Freshdesk MCP Server
-[![smithery badge](https://smithery.ai/badge/@effytech/freshdesk_mcp)](https://smithery.ai/server/@effytech/freshdesk_mcp)
+# Freshservice MCP Server
+[![smithery badge](https://smithery.ai/badge/@effytech/freshservice_mcp)](https://smithery.ai/server/@effytech/freshservice_mcp)
 
-An MCP server implementation that integrates with Freshdesk, enabling AI models to interact with Freshdesk modules and perform various support operations.
+An MCP server implementation that integrates with Freshservice, enabling AI models to interact with Freshservice modules and perform various support operations.
 
 ## Features
 
-- **Freshdesk Integration**: Seamless interaction with Freshdesk API endpoints
-- **AI Model Support**: Enables AI models to perform support operations through Freshdesk
+- **Freshservice Integration**: Seamless interaction with Freshservice API endpoints
+- **AI Model Support**: Enables AI models to perform support operations through Freshservice
 - **Automated Ticket Management**: Handle ticket creation, updates, and responses
 
 ## Components
 
 ### Tools
 
-The server offers several tools for Freshdesk operations:
+The server offers several tools for Freshservice operations:
 
 - `create_ticket`: Create new support tickets
   - **Inputs**:
@@ -150,21 +150,21 @@ The server offers several tools for Freshdesk operations:
 
 ### Installing via Smithery
 
-To install freshdesk_mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@effytech/freshdesk_mcp):
+To install freshservice_mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@effytech/freshservice_mcp):
 
 ```bash
-npx -y @smithery/cli install @effytech/freshdesk_mcp --client claude
+npx -y @smithery/cli install @effytech/freshservice_mcp --client claude
 ```
 
 ### Prerequisites
 
-- A Freshdesk account (sign up at [freshdesk.com](https://freshdesk.com))
-- Freshdesk API key
+- A Freshservice account (sign up at [freshservice.com](https://freshservice.com))
+- Freshservice API key
 - `uvx` installed (`pip install uv` or `brew install uv`)
 
 ### Configuration
 
-1. Generate your Freshdesk API key from the Freshdesk admin panel
+1. Generate your Freshservice API key from the Freshservice admin panel
 2. Set up your domain and authentication details
 
 ### Usage with Claude Desktop
@@ -174,22 +174,22 @@ npx -y @smithery/cli install @effytech/freshdesk_mcp --client claude
 
 ```json
 "mcpServers": {
-  "freshdesk-mcp": {
+  "freshservice-mcp": {
     "command": "uvx",
     "args": [
-        "freshdesk-mcp"
+        "freshservice-mcp"
     ],
     "env": {
-      "FRESHDESK_API_KEY": "<YOUR_FRESHDESK_API_KEY>",
-      "FRESHDESK_DOMAIN": "<YOUR_FRESHDESK_DOMAIN>"
+      "FRESHSERVICE_API_KEY": "<YOUR_FRESHSERVICE_API_KEY>",
+      "FRESHSERVICE_DOMAIN": "<YOUR_FRESHSERVICE_DOMAIN>"
     }
   }
 }
 ```
 
 **Important Notes**:
-- Replace `YOUR_FRESHDESK_API_KEY` with your actual Freshdesk API key
-- Replace `YOUR_FRESHDESK_DOMAIN` with your Freshdesk domain (e.g., `yourcompany.freshdesk.com`)
+- Replace `YOUR_FRESHSERVICE_API_KEY` with your actual Freshservice API key
+- Replace `YOUR_FRESHSERVICE_DOMAIN` with your Freshservice domain (e.g., `yourcompany.freshservice.com`)
 
 ## Example Operations
 
@@ -206,13 +206,13 @@ Once configured, you can ask Claude to perform operations like:
 For testing purposes, you can start the server manually:
 
 ```bash
-uvx freshdesk-mcp --env FRESHDESK_API_KEY=<your_api_key> --env FRESHDESK_DOMAIN=<your_domain>
+uvx freshservice-mcp --env FRESHSERVICE_API_KEY=<your_api_key> --env FRESHSERVICE_DOMAIN=<your_domain>
 ```
 
 ## Troubleshooting
 
-- Verify your Freshdesk API key and domain are correct
-- Ensure proper network connectivity to Freshdesk servers
+- Verify your Freshservice API key and domain are correct
+- Ensure proper network connectivity to Freshservice servers
 - Check API rate limits and quotas
 - Verify the `uvx` command is available in your PATH
 

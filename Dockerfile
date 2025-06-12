@@ -17,4 +17,4 @@ RUN pip install --upgrade pip \
 # EXPOSE 8080
 
 # Set default command
-CMD ["freshdesk-mcp"]
+CMD ["freshservice-mcp"]

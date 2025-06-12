@@ -1,13 +1,11 @@
 import unittest
-from unittest.mock import patch, MagicMock
-import json
 import os
 import sys
 import asyncio
 
 # Add the parent directory to the path so we can import the module
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.freshdesk_mcp.server import parse_link_header
+from src.freshservice_mcp.server import parse_link_header
 
 # Create a mock version of our server functions to isolate testing
 async def mock_list_companies(page=1, per_page=30):

@@ -6,26 +6,26 @@ startCommand:
     # JSON Schema defining the configuration options for the MCP.
     type: object
     required:
-      - freshdeskApiKey
-      - freshdeskDomain
+      - freshserviceApiKey
+      - freshserviceDomain
     properties:
-      freshdeskApiKey:
+      freshserviceApiKey:
         type: string
-        description: Freshdesk API Key
-      freshdeskDomain:
+        description: Freshservice API Key
+      freshserviceDomain:
         type: string
-        description: Freshdesk domain (e.g., yourcompany.freshdesk.com)
+        description: Freshservice domain (e.g., yourcompany.freshservice.com)
   commandFunction:
     # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
     |-
     (config) => ({
-      command: 'freshdesk-mcp',
+      command: 'freshservice-mcp',
       args: [],
       env: {
-        FRESHDESK_API_KEY: config.freshdeskApiKey,
-        FRESHDESK_DOMAIN: config.freshdeskDomain
+        FRESHSERVICE_API_KEY: config.freshserviceApiKey,
+        FRESHSERVICE_DOMAIN: config.freshserviceDomain
       }
     })
   exampleConfig:
-    freshdeskApiKey: YOUR_FAKE_FRESHDESK_API_KEY
-    freshdeskDomain: yourcompany.freshdesk.com
+    freshserviceApiKey: YOUR_FAKE_FRESHSERVICE_API_KEY
+    freshserviceDomain: yourcompany.freshservice.com

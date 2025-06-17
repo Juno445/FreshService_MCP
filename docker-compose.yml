@@ -1,0 +1,7 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  your_service:
+    image: your_image
+    environment:
+      - FRESHSERVICE_API_KEY=${FRESHSERVICE_API_KEY}

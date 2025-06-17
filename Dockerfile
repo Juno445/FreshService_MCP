@@ -14,7 +14,6 @@ RUN pip install --upgrade pip \
 EXPOSE 8004
 
 # Set environment variables
-ENV FRESHSERVICE_API_KEY="x"
 ENV FRESHSERVICE_DOMAIN="x"
 
 # Set default command
